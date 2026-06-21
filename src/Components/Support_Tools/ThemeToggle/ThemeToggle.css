@@ -1,0 +1,43 @@
+.theme-toggle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px;
+  background: var(--surface-hover);
+  border: 1px solid var(--surface-border);
+  border-radius: 999px;
+}
+
+.theme-toggle-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  z-index: 1;
+  color: var(--text-muted);
+  transition: color 0.3s ease;
+}
+
+.theme-toggle-btn.active {
+  color: #ffffff;
+}
+
+.theme-toggle-btn svg {
+  width: 14px;
+  height: 14px;
+}
+
+.theme-toggle-indicator {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--gradient-primary);
+  z-index: 0;
+}

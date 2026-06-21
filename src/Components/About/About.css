@@ -1,0 +1,182 @@
+.about {
+  position: relative;
+  background: var(--bg-secondary);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 64px;
+  align-items: center;
+}
+
+/* ===== Photo side ===== */
+.about-photo-wrap {
+  position: relative;
+}
+
+.about-photo-card {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  aspect-ratio: 4 / 5;
+}
+
+.about-photo-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Gradient accent shape behind the photo - depth element */
+.about-photo-glow {
+  position: absolute;
+  top: -24px;
+  left: -24px;
+  right: 24px;
+  bottom: 24px;
+  background: var(--gradient-primary);
+  border-radius: 24px;
+  opacity: 0.4;
+  filter: blur(2px);
+  z-index: -1;
+}
+
+/* Small floating badge on the photo - "from X to Y" pivot tag */
+.about-photo-badge {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  padding: 14px 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.about-photo-badge-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 10px;
+  background: var(--gradient-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 13px;
+  flex-shrink: 0;
+}
+
+/* ===== Text side ===== */
+.about-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-bio {
+  color: var(--text-muted);
+  font-size: 16px;
+  line-height: 1.75;
+  margin-bottom: 20px;
+}
+
+.about-bio strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+/* Pivot timeline - Civil Engineering -> IT */
+.about-pivot {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 28px 0 32px;
+  padding: 20px;
+}
+
+.about-pivot-stage {
+  flex: 1;
+  text-align: center;
+}
+
+.about-pivot-stage-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-dim);
+  margin-bottom: 4px;
+}
+
+.about-pivot-stage-value {
+  font-family: 'Sora', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--text);
+}
+
+.about-pivot-arrow {
+  color: var(--primary);
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+/* Quick-fact chips (location, education, focus) */
+.about-facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.about-fact-chip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background: var(--surface);
+  border: 1px solid var(--surface-border);
+  border-radius: 12px;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.about-fact-chip svg {
+  color: var(--primary);
+  width: 14px;
+  height: 14px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .about-photo-card {
+    max-width: 360px;
+    margin: 0 auto;
+  }
+
+  .about-photo-glow {
+    max-width: 360px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .about-pivot {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .about-pivot-arrow {
+    transform: rotate(90deg);
+  }
+
+  .about-facts {
+    flex-direction: column;
+  }
+}
