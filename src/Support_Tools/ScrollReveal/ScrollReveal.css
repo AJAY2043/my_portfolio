@@ -1,5 +1,0 @@
-/* No CSS needed here — all animation is handled by Framer Motion
-   directly via inline style/motion props in the JSX.
-   This file exists for structure consistency (every component folder
-   has a matching .css file) and in case you want to add custom
-   easing classes later. */
