@@ -24,13 +24,13 @@ export const PROJECTS = [
   {
     id: 'whereismyforeman',
     title: 'WhereIsMyForeman',
-    subtitle: 'Workforce tracking app',
+    subtitle: 'Skilled-trades marketplace',
     description:
-      'A workforce/tracking application concept built to explore real-time status updates and role-based views between site workers and supervisors.',
+      'A marketplace for finding skilled trade professionals across eight categories, with worker listing and detail pages, a saved-favourites list held in React Context, and account sign-up through Firebase.',
     image: placeholderImg,
-    tags: ['React', 'JavaScript', 'CSS'],
+    tags: ['React', 'React Router', 'Firebase'],
     liveUrl: '',
-    githubUrl: 'https://github.com/AJAY2043',
+    githubUrl: 'https://github.com/AJAY2043/foreman-project',
     featured: false,
   },
   {

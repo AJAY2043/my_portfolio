@@ -82,8 +82,8 @@ function Hero() {
           </motion.h1>
 
           <motion.p className="hero-subtitle" variants={itemVariants}>
-            Master of IT student in Melbourne, transitioning from civil engineering
-            into software development. I build with React, I deliver real client
+            Master of IT student in Melbourne, moving from electronics engineering
+            into software and cloud infrastructure. I build with React, I deliver real client
             work, and I'm currently working toward Microsoft Azure certification.
           </motion.p>
 
