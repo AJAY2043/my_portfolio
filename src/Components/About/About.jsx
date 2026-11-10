@@ -5,11 +5,11 @@ import {
   faGraduationCap,
   faShieldHalved,
   faArrowRight,
-  faHardHat,
+  faMicrochip,
   faLaptopCode,
 } from '@fortawesome/free-solid-svg-icons';
 import ScrollReveal from '../Support_Tools/ScrollReveal/ScrollReveal';
-import aboutPhoto from '../../AddOns/Assets/about-candidateA-plaid-smile.jpg';
+import aboutPhoto from '../../AddOns/Assets/headshot-ajay-professional.jpg';
 import './About.css';
 
 const About = () => {
@@ -27,7 +27,7 @@ const About = () => {
                   <div className="about-photo-badge-icon">
                     <FontAwesomeIcon icon={faLaptopCode} />
                   </div>
-                  Civil Engineer → IT
+                  Electronics Engineer → IT
                 </div>
               </div>
             </div>
@@ -44,8 +44,8 @@ const About = () => {
 
             <ScrollReveal delay={0.1}>
               <p className="about-bio">
-                I started out studying <strong>Civil Engineering (BTech)</strong> in
-                India — but along the way I realised the part I actually enjoyed
+                I started out studying <strong>Electronics &amp; Communication
+                Engineering (BTech)</strong> in India — but along the way I realised the part I actually enjoyed
                 most was solving logical problems and building things that people
                 could directly interact with. That realisation led me to make a
                 deliberate pivot into IT.
@@ -72,8 +72,8 @@ const About = () => {
                 <div className="about-pivot-stage">
                   <div className="about-pivot-stage-label">Started In</div>
                   <div className="about-pivot-stage-value">
-                    <FontAwesomeIcon icon={faHardHat} style={{ marginRight: 6 }} />
-                    Civil Engineering
+                    <FontAwesomeIcon icon={faMicrochip} style={{ marginRight: 6 }} />
+                    Electronics Engineering
                   </div>
                 </div>
                 <FontAwesomeIcon icon={faArrowRight} className="about-pivot-arrow" />
